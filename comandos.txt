@@ -1,0 +1,6 @@
+ls - lista o conteudo da pasta
+cd "nome do caminho" - entra no diretório
+mkdir "nome da pasta" - "make directory", cria uma pasta
+.. - retornar para a pasta/diretório anterior
+ls -a - lista arquivos "invisiveis"
+git config --local(para repositorio apenas da minha conta secundaria) user.name e user.email
