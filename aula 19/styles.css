@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DCDCDC;
+}
+.cabecalho{
+    background-color: #222;
+    color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 20px
+}
+.menu a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+.menu a:hover{
+    font-size: 110%;
+}
+
+/*Main*/
+
+.cards{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.produtos{
+    background-color: #D3D3D3;
+    width: 250px;
+    padding: 15px;
+    border: 3px solid #ccc;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.produtos h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.produtos p{
+    font-size: 15px;
+    margin: 1.5rem;
+}
+.produtos button{
+    padding: 10px;
+    background-color: transparent;
+    color: #222;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: #222;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 60%;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out
+}
+.produtos button:hover{
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
