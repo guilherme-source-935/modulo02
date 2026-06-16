@@ -7,6 +7,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #DCDCDC;
 }
+
+/*Header*/
+
 .cabecalho{
     background-color: #222;
     color: #f1f1f1;
@@ -25,7 +28,7 @@ body{
     text-decoration: none;
 }
 .menu a:hover{
-    font-size: 110%;
+    transform: scale(1.15);
 }
 
 /*Main*/
@@ -71,4 +74,26 @@ body{
     background-color: #222;
     color: #fff;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Footer*/
+
+.rodape{
+    background-color: #222;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape p{
+    text-align: center;
+    padding-bottom: 35px;
+
+}
+.redes-sociais img{
+    width: 20px;
+    padding: 10px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
