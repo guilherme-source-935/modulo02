@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Estudo DOM</h1>
+    <p>Aprendendo a usar o DOM em Javascript</p>
+    <P>Aqui que vai mudar</P>
+    <p id="msg">Vamos usar outro seletor</p>
+    <p class="classe">Vamos mais um seletor</p>
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" id="nome" name="nome">
+    <button onclick="mostrarnome()">Mostrar</button>
+    <p id="resultado"></p>
+    <p id="texto">Vamos usar querySelector</p>
+
+    <!--Tag script é usada ao fim do body-->
+    <script> 
+        let paragrafo = document.getElementsByTagName('p')[1]
+        paragrafo.innerText = "Texto alterado pelo Javascript"
+        paragrafo.style.color = 'red'
+        
+        // document.getElementsByTagName('p')[0].innerText = 'Mudou direto'
+        let p2 = document.getElementById('msg')
+        let p3 = document.getElementsByClassName('classe')[0]
+        p2.innerHTML = "Usamos o seletor <strong>ID</strong> para mudar o texto" <!--innerHTML permite colocar tags HTML dentro do texto-->
+        p3.innerHTML = "Usamos o seletor <strong>CLASS</strong> para mudar o texto"
+        function mostrarnome(){
+            // let nome = document.getElementsByName('nome')[0].value
+            const campo = document.querySelector("[name='nome']")
+            let nome = campo.value
+            document.getElementById('resultado').innerText = `Olá, ${nome}`
+        }
+        let texto = document.querySelectorAll('p')
+        texto[4].innerText = "Usamos o querySelector pela TAG"
+    </script>
+</body>
+</html>
