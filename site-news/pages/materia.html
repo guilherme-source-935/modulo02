@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Matéria</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/components/site-header.js" defer></script>
+    <script src="../js/components/news-card.js" defer></script>
+    <script src="../js/components/site-footer.js" defer></script>
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="../aula 21/index.html" class="logo">MyAnimeNews</a>
-        <nav class="navegacao">
-            <a href="#">Política</a>
-            <a href="#">Economia</a>
-            <a href="#">Esportes</a>
-            <a href="#">Anime</a>
-        </nav>
-    </header>
+    <site-header></site-header>
 
     <nav class="trilha">
-        <a href="../aula 21/index.html">Início</a>
+        <a href="index.html">Início</a>
         <span>/</span>
         <a href="#">Política</a>
         <span>/</span>
@@ -37,8 +32,8 @@
                     <span class="data">18 de Junho de 2026 - 8 Minutos de Leitura</span>
                 </div>
                 <div class="compartilhar">
-                    <button>Compartilhar</button>
-                    <button>Salvar</button>
+                    <button class="btn">Compartilhar</button>
+                    <button class="btn">Salvar</button>
                 </div>
             </div>
             <div class="texto">
@@ -53,13 +48,13 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium hic rerum, asperiores ipsa placeat mollitia magni officiis nesciunt atque qui aspernatur, provident quaerat cupiditate delectus illum ducimus expedita quo.</p>
             </div>
             <div class="tags">
-                <a href="#">China</a>
-                <a href="#">Palácio</a>
-                <a href="#">Medicina</a>
-                <a href="#">Histórias</a>
+                <a href="#" class="tag">China</a>
+                <a href="#" class="tag">Palácio</a>
+                <a href="#" class="tag">Medicina</a>
+                <a href="#" class="tag">Histórias</a>
             </div>
             <figure class="imagem-destaque">
-                <img src="Maomao_29.webp" alt="Apotecária">
+                <img src="../assets/Maomao_29.webp" alt="Apotecária">
                 <figcaption>Apotecária no Palácio Interno, Pequim</figcaption>
             </figure>
         </article>
@@ -78,48 +73,20 @@
                 <h3>Receba as Notícias</h3>
                 <p>Assine nosso boletim diário.</p>
                 <input type="email" placeholder="seu@email.com">
-                <button>Assinar</button>
+                <button class="btn">Assinar</button>
             </div>
         </aside>
     </div>
 
     <section class="relacionados">
         <h2>Leia também</h2>
-        <div class="grade">
-            <article class="cartao">
-                <span class="categoria">Economia</span>
-                <h3>Iene recua e bolsa fecha em alta</h3>
-            </article>
-
-            <article class="cartao">
-                <span class="categoria">Cultura</span>
-                <h3>Goku promove relações entre América Latina e Japão</h3>
-            </article>
-
-            <article class="cartao">
-                <span class="categoria">Esportes</span>
-                <h3>Time de Inazuma Eleven leva Brasil ao Hexa</h3>
-            </article>
+        <div class="grade">           
+            <news-card categoria="Economia" titulo="Iene recua e bolsa fecha em alta" resumo="Ufotable novamente lançou uma obra prima ao mercado."></news-card>
+            <news-card categoria="Cultura" titulo="Goku promove relações entre América Latina e Japão" resumo="Ufotable novamente lançou uma obra prima ao mercado."></news-card>
+            <news-card categoria="Esportes" titulo="Time de Inazuma Eleven leva Brasil ao Hexa" resumo="Ufotable novamente lançou uma obra prima ao mercado."></news-card>
         </div>
     </section>
-    <footer class="rodape">
-        <div class="coluna">
-            <h4><strong>MyAnimeNews</strong></h4>
-            <p>Altíssima credibilidade, Dirigido por Guilherme</p>
-        </div>
-        <div class="coluna">
-            <h4>Editoriais</h4>
-            <a href="#">Política</a>
-            <a href="#">Cultura</a>
-            <a href="#">Esportes</a>
-            <a href="#">Anime</a>
-        </div>
-        <div class="coluna">
-            <h4>Institucional</h4>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Contato</a>
-        </div>
-    </footer>
+
+    <site-footer></site-footer>
+</body>
 </html>

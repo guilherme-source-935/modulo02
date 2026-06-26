@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/components/site-header.js" defer></script>
+    <script src="../js/components/news-card.js" defer></script>
+    <script src="../js/components/site-footer.js" defer></script>
+    <title>MyAnimeNews</title>
+</head>
+<body>
+    
+    <site-header></site-header>
+
+    <div class="conteudo">
+        <main class="principal">
+            <article class="cartao card--destaque">
+                <span class="categoria">Anime</span>
+                <h1 class="cartao__titulo">Rent a Girlfriend Ganha Sexta Temporada!</h1>
+                <p class="cartao__resumo">Não acredito que ainda não acabou.</p>        
+            </article>
+            <section class="grandes-noticias">
+                <news-card categoria="Economia" titulo="Iene Desponta para 0,055 Reais" resumo="Ufotable novamente lançou uma obra prima ao mercado."></news-card>
+                <news-card categoria="Política" titulo="Herói Salva Reino Medieval" resumo="O poder do conhecimento do mundo moderno."></news-card>
+                <news-card categoria="Esportes" titulo="Karasuno High Vence Nekoma High" resumo="Eu não assisti Haikyuu!"></news-card>
+            </section>
+        </main>
+        <aside class="menu-lateral">
+            <div class="caixa">
+                <h3>Mais Lidas</h3>
+                <ol>
+                    <li>Dr. Stone Termina Depois de 7 Anos</li>
+                    <li>Goku Revive Pela 5a Vez</li>
+                    <li>30 Isekais na Nova Temporada, e Todos tem 5* no MyAnimeList</li>
+                    <li>Novo Anime de Vilã Anunciado</li>
+                </ol>
+            </div>
+        </aside>
+    </div>
+
+    <site-footer></site-footer>
+</body>
+</html>
